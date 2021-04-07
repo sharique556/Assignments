@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <div id=updatebk>
+        <fieldset>
+            <legend>Update Book Details</legend>
+            <label for="bookname" id="bookkey">Book's Name</label>
+            <input type=text id="booknameval"/><br><br>
+            <label for="authorname" id="authorkey">Author's Name</label>
+            <input type=text id="authornameval"/><br><br>
+            <label for="bookrating" id="ratingkey">Rating</label>
+            <input type=text id="bookratingval"/><br><br>
+            <button id="addbook" onclick="getKeyVal()">Insert</button>
+        </fieldset>
+        <fieldset>
+            <legend>Added Book</legend>
+            <div id="addedbook"></div>
+        </fieldset>
+    </div>
+</body>
+<script>
+    const bookkey = document.getElementById("bookkey");
+    const booknameval = document.getElementById("booknameval");
+    const authorkey = document.getElementById("authorkey");
+    const authornameval = document.getElementById("authornameval");
+    const ratingkey = document.getElementById("ratingkey");
+    const bookratingval = document.getElementById("bookratingval");
+    const addbook = document.getElementById("addbook");
+    const addedbook = document.getElementById("addedbook");
+
+    function getKeyVal(){
+        const book_key = bookkey.value ;
+        const bookname_val = booknameval.value ;
+        const author_key = authorkey.value;
+        const authorname_val = authornameval.value ;
+        const rating_key = ratingkey.value ;
+        const bookrating_val = bookratingval.value ;
+        console.log(book_key);
+        console.log(bookname_val);
+        console.log(author_key);
+        console.log(authorname_val);
+        console.log(rating_key);
+        console.log(bookrating_val);
+    };
+    
+</script>
+</html>

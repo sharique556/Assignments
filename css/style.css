@@ -1,0 +1,13 @@
+
+/*# sourceMappingURL=style.css.map */
+
+.search-section{
+  display : inline-block ;
+}
+
+.input-group{
+  max-width: 70%;
+}
+.form-outline{
+  display : flex;
+}
